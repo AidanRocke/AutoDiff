@@ -1,15 +1,18 @@
 # AutoDiff
 Automatic Differentiation via Contour Integration
 
-## Motivation: 
+## Motivation: 
 
 There has previously been some back-and-forth among scientists about whether biological networks such as brains
-might compute derivatives. The standard counter-argument is that backpropagation isn't biologically plausible
+might compute derivatives. I have previously made my position on this issue clear: https://twitter.com/bayesianbrain/status/1202650626653597698
+
+The standard counter-argument is that backpropagation isn't biologically plausible
 but partial derivatives are very useful for closed-loop control so we are faced with a fundamental question we
 can't ignore. How might large branching structures in the brain and other biological systems compute derivatives?
 
 After some reflection I realised that an important result in complex analysis due to Cauchy, the Cauchy Integral Formula, 
-may be used to compute derivatives with a simple forward propagation of signals using a monte-carlo method.
+may be used to compute derivatives with a simple forward propagation of signals using a monte-carlo method. Incidentally, 
+Cauchy also discovered the gradient descent algorithm. 
 
 **Minimal implementation in the Julia language:**
 
