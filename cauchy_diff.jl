@@ -1,7 +1,7 @@
 function nabla(f, x::Float64, delta::Float64)
 
   ## automatic differentiation of holomorphic functions in a single complex variable
-  ## applied to real-valued functions in a single variable
+  ## applied to real-valued functions in a single variable using the Cauchy Integral Formula
 
   N = round(Int,2*pi/delta)
   thetas = vcat(1:N)*delta
