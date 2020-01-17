@@ -33,7 +33,7 @@ function mc_nabla(f, x::Float64, delta::Float64)
   arguments = x .+ conj.(rotations)  
 
   ## calculate expectation: 
-  expectation = 1.0/(2*pi)*real(sum(map(f,arguments).*rotations))*delta
+  expectation = (2.0/N)*real(sum(map(f,arguments).*rotations))
 
   return expectation
 
