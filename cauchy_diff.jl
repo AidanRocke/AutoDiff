@@ -17,12 +17,6 @@ function nabla(f, x::Float64, delta::Float64)
 
 end
 
-q(X) = X[1] + X[2]^2 + cos(X[3])
-
-q2 = x -> q(x*kd(2,3) .+ X.*(ones(3)-kd(2,3)))
-
-q3 = x -> q(x*kd(3,3) .+ X.*(ones(3)-kd(3,3)))
-
 function partial_nabla(f, i::Int64, X::Float64,delta::Float64)
 
   ## f:= the function to be differentiated
@@ -30,7 +24,7 @@ function partial_nabla(f, i::Int64, X::Float64,delta::Float64)
   ## X:= where the partial derivative is evaluated
   ## delta:= the sampling frequency
 
-  N = len(X)
+  N = length(X)
 
   kd(i,n) = [j==i for j in 1:n]
 
