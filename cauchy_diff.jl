@@ -17,7 +17,7 @@ function nabla(f, x::Float64, delta::Float64)
 
 end
 
-function partial_nabla(f, i::Int64, X::Float64,delta::Float64)
+function partial_nabla(f, i::Int64, X::Array{Float64,1},delta::Float64)
 
   ## f:= the function to be differentiated
   ## i:= partial differentiation with respect to this index
