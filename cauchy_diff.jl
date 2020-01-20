@@ -28,8 +28,8 @@ function partial_nabla(f, i::Int64, X::Array{Float64,1},delta::Float64)
 
   kd(i,n) = [j==i for j in 1:n]
 
-  f_x = x -> f(x*kd(i,N) .+ X.*(ones(N)-kd(i,N)))
+  f_i = x -> f(x*kd(i,N) .+ X.*(ones(N)-kd(i,N)))
 
-  return nabla(f_x,X[i],delta)
+  return nabla(f_i,X[i],delta)
 
 end
