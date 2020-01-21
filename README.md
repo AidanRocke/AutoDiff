@@ -58,32 +58,6 @@ function partial_nabla(f, i::Int64, X::Array{Float64,1},delta::Float64)
 end
 ```
 
-**Minimal implementation of differentiation via Monte Carlo Contour Integration in the Julia language:**
-
-```julia
-function mc_nabla(f, x::Float64, delta::Float64)
-
-  ## automatic differentiation of holomorphic functions in a single complex variable
-  ## applied to real-valued functions in a single variable
-
-  N = round(Int,2*pi/delta)
-
-  ## sample with only half the number of points: 
-  sample = rand(1:N,round(Int,N/2)) 
-  thetas = sample*delta
-
-  ## collect arguments and rotations: 
-  rotations = map(theta -> exp(-im*theta),thetas)
-  arguments = x .+ conj.(rotations)  
-
-  ## calculate expectation: 
-  expectation = (2.0/N)*real(sum(map(f,arguments).*rotations))
-
-  return expectation
-
-end
-```
-
 **Blog post:**
 
 https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
