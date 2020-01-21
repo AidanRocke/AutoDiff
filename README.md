@@ -48,3 +48,8 @@ https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
 
 https://github.com/AidanRocke/AutoDiff/blob/master/cauchy_tutorial.ipynb
 
+
+## Supplementary blog posts: 
+
+1. [An alternative definition for the Partial Derivative](https://keplerlounge.com/applied-math/2020/01/20/partial-derivative.html)
+
