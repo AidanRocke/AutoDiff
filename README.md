@@ -64,8 +64,9 @@ https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
 
 **Jupyter Notebook:**
 
-https://github.com/AidanRocke/AutoDiff/blob/master/cauchy_tutorial.ipynb
+1. [Main tutorial](https://github.com/AidanRocke/AutoDiff/blob/master/main_tutorial.ipynb)
 
+2. [Physics simulations](https://github.com/AidanRocke/AutoDiff/blob/master/physics_simulations.ipynb)
 
 ## Supplementary blog posts: 
 
