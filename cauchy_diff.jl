@@ -66,3 +66,21 @@ function mc_nabla(f, x::Float64, delta::Float64)
   return expectation
 
 end
+
+function jacobian(f,X::Array{Float64,1},delta::Float64)
+    
+    N = Int(length(X))
+    
+    ## initialise jacobian: 
+    J = zeros(N,N)
+    
+    for i = 1:N
+        
+        f_i(x) = f(x)[i]
+        J[i,:] = [partial_nabla(f_i,j,X,delta) for j=1:N]
+        
+    end
+    
+    return J
+    
+end

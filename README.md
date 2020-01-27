@@ -74,3 +74,5 @@ https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
 
 1. [An alternative definition for the Partial Derivative](https://keplerlounge.com/applied-math/2020/01/20/partial-derivative.html)
 
+2. [Are partial derivatives the computational primitives of deep neural networks?](https://keplerlounge.com/neural-computation/2020/01/26/partial-derivatives.html)
+
