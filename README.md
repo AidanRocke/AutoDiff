@@ -58,11 +58,11 @@ function partial_nabla(f, i::Int64, X::Array{Float64,1},delta::Float64)
 end
 ```
 
-**Blog post:**
+## Blog post:
 
-https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
+[Automatic Differentiation via Contour Integration](https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html)
 
-**Jupyter Notebook:**
+## Jupyter Notebook:
 
 1. [Main tutorial](https://github.com/AidanRocke/AutoDiff/blob/master/main_tutorial.ipynb)
 
