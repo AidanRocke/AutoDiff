@@ -70,9 +70,13 @@ https://keplerlounge.com/neural-computation/2020/01/16/complex-auto-diff.html
 
 3. [Convergence of Error](https://github.com/AidanRocke/AutoDiff/blob/master/convergence_of_error.ipynb)
 
-## Supplementary blog posts: 
+## Supplementary information: 
 
 1. [An alternative definition for the Partial Derivative](https://keplerlounge.com/applied-math/2020/01/20/partial-derivative.html)
 
 2. [Are partial derivatives the computational primitives of deep neural networks?](https://keplerlounge.com/neural-computation/2020/01/26/partial-derivatives.html)
+
+3. [Derivation of the complex-step method from the Cauchy Integral Formula for derivatives](https://keplerlounge.com/applied-math/2020/02/28/CIF-autodiff.html)
+
+4. [Joaquim Martins, Peter Sturdza, and Juan J. Alonso. THE CONNECTION BETWEEN THE COMPLEX-STEP DERIVATIVE APPROXIMATION AND ALGORITHMIC DIFFERENTIATION. American Institute of Aeronautics and Astronautics. 2001.](https://pdfs.semanticscholar.org/a659/783579f4a19d7c11f4be91f46477ec1685a1.pdf)
 
